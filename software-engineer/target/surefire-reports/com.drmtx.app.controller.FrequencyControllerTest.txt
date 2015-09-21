@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.drmtx.app.controller.FrequencyControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.827 sec <<< FAILURE! - in com.drmtx.app.controller.FrequencyControllerTest
+handleNew(com.drmtx.app.controller.FrequencyControllerTest)  Time elapsed: 0.59 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.drmtx.app.controller.FrequencyControllerTest.handleNew(FrequencyControllerTest.java:39)
+
+handleCount(com.drmtx.app.controller.FrequencyControllerTest)  Time elapsed: 0.236 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.drmtx.app.controller.FrequencyControllerTest.handleNew(FrequencyControllerTest.java:39)
+	at com.drmtx.app.controller.FrequencyControllerTest.handleCount(FrequencyControllerTest.java:49)
+

@@ -15,30 +15,40 @@ import javax.servlet.ServletContextListener;
 
 @EnableAutoConfiguration
 @SpringBootApplication
-@EntityScan(basePackageClasses=Application.class)
+@EntityScan(basePackageClasses = Application.class)
 @Configuration
 public class Application {
 
-  private static final Logger _logger = LogManager.getLogger(Application.class);
+    private static final Logger log = LogManager.getLogger(Application.class);
 
-  @Bean
-  protected ServletContextListener listener() {
-    return new ServletContextListener() {
+    /**
+     * the current version of the api to use in the path
+     */
+    public static final String API_VERSION = "v1";
 
-      @Override
-      public void contextInitialized(ServletContextEvent sce) {
-        _logger.info("ServletContext initialized");
-      }
+    /**
+     * the base context to use
+     */
+    public static final String BASE_API_CTX = "/api/" + API_VERSION;
 
-      @Override
-      public void contextDestroyed(ServletContextEvent sce) {
-        _logger.info("ServletContext destroyed");
-      }
+    @Bean
+    protected ServletContextListener listener() {
+        return new ServletContextListener() {
 
-    };
-  }
+            @Override
+            public void contextInitialized(ServletContextEvent sce) {
+                log.info("ServletContext initialized");
+            }
 
-  public static void main(String[] args) throws Exception {
-    ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
-  }
+            @Override
+            public void contextDestroyed(ServletContextEvent sce) {
+                log.info("ServletContext destroyed");
+            }
+
+        };
+    }
+
+    public static void main(String[] args) throws Exception {
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
+    }
 }

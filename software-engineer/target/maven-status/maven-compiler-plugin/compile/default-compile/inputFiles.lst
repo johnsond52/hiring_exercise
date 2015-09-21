@@ -1,0 +1,17 @@
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/util/exception/RedditDataException.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/controller/ApiController.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/entity/WordFrequency.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/dao/FrequencyCalculationDAO.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/request/FrequencyNewRequest.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/entity/BaseEntity.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/service/FrequencyService.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/resource/BaseResource.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/resource/FrequencyNewResource.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/resource/ApiResource.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/util/exception/RedditCommunicationException.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/resource/ErrorResource.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/Application.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/controller/FrequencyController.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/entity/FrequencyCalculation.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/resource/FrequencyResource.java
+/Users/steve/dev/hiring_exercise/software-engineer/src/main/java/com/drmtx/app/util/RedditCommentWordCounter.java

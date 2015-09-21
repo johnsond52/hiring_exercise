@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.drmtx.app.controller.ApiControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.758 sec - in com.drmtx.app.controller.ApiControllerTest
