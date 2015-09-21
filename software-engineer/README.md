@@ -10,20 +10,35 @@ Specification
 Your application should expose two HTTP endpoints:
 
 
-API Definition: /frequency/new
+API Definition: POST /frequency/new
 ----------------------------------
 
 __API Input:__ 
 
-This API endpoint should take a Reddit comment URL as a parameter e.g.: 
-  
-    https://www.reddit.com/r/java/comments/32pj67/java_reference_in_gta_v_beautiful/.json
+This API endpoint should take a Reddit comment URL in the request body e.g.: 
+
+```
+  {
+    "url": "https://www.reddit.com/r/java/comments/32pj67/java_reference_in_gta_v_beautiful/.json"
+  }
+```
+    
 
 *Note: by adding .json to any Reddit comment URL you will get a json representation of this particular comment thread, the json representation should be used in order to do the word frequency analysis.* 
  
 __API Response:__
  
-For each request executed against the API endpoint you should return an unique identifier, which will be the input for the second API endpoint. 
+For each request executed against the API endpoint you should return an unique identifier, which will be the input for the second API endpoint.
+ 
+__Example Response:__
+```
+{
+    "content": {
+        "id": 1
+    },
+    "apiVersion": "v1"
+}
+```
  
 __Workflow:__
 
@@ -54,7 +69,7 @@ __Workflow:__
 * The analysed data should be stored within a data store and referenced by an unique identifier (see API response).  
 
 
-API Definition: /frequency/{id}?count=number_of_results
+API Definition: GET /frequency/{id}?count=number_of_results
 ----------------------------------
 
 __API Input:__ 
@@ -73,16 +88,35 @@ __Workflow:__
 __Example: /frequency/ABC?count=2__
 
 ```
-[
-  {
-    "word": "the",
-    "count": 2
-  },
-  {
-    "word": "fox",
-    "count": 1
-  }
-]
+{
+    "content": [
+        {
+            "count": 344,
+            "word": "the"
+        },
+        {
+            "count": 274,
+            "word": "to"
+        },
+        {
+            "count": 262,
+            "word": "a"
+        },
+        {
+            "count": 241,
+            "word": "i"
+        },
+        {
+            "count": 237,
+            "word": "and"
+        },
+        {
+            "count": 225,
+            "word": "you"
+        }
+    ],
+    "apiVersion": "v1"
+}
 ```
     
 
